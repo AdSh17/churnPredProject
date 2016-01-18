@@ -1,0 +1,67 @@
+   <div class='container'>
+            
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <div class='col-sm-6'>
+                        <form class='form-horizontal' method='POST'>
+                            <h2> Log In </h2>
+                            <div class='row form-group'>
+                                <label for='email' class='control-label col-sm-2'> Email: </label>
+                                <div class='col-sm-8'>
+                                    <input type='email' ng-model ="email" name='email' class='form-control' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='password' class='control-label col-sm-2'> Password: </label>
+                                <div class='col-sm-8'>
+                                    <input type='password' ng-model="password" name='password' class='form-control' required />
+                                </div>
+                            </div>
+                           
+                            <div class='row form-group'>
+                                <div class='col-sm-offset-2 col-sm-10'>
+                                    <button ng-click="login(email,password)" data-loading-btn class='btn btn-primary'><span data-loaded-msg="Thank you!">Log in</span> </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                
+
+
+                    <div class='col-sm-6'>
+                        <form class='form-horizontal'  method='POST'>
+                            <h2> Sign Up </h2>
+                            <div class='row form-group'>
+                                <label for='email' class='control-label col-sm-2'> Email: </label>
+                                <div class='col-sm-8'>
+                                    <input type='email' ng-model ="newEmail" name='email' class='form-control' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='username' class='control-label col-sm-2'> Username: </label>
+                                <div class='col-sm-8'>
+                                    <input type='text' ng-model ="newUserName" name='username' class='form-control' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='password' class='control-label col-sm-2'> Password: </label>
+                                <div class='col-sm-8'>
+                                    <input type='password' ng-model ="newPassword" name='password' class='form-control' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='Cpassword' class='control-label col-sm-2'> Confirm Password: </label>
+                                <div class='col-sm-8'>
+                                    <input type='password' ng-model ="newCpassword" name='Cpassword' class='form-control' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <div class='col-sm-offset-2 col-sm-10'>
+                                    <button ng-click ="createUser(newEmail,newUserName,newPassword)" data-loading-btn class='btn btn-primary'><span data-loaded-msg="Signing Up!">Sign Up </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
