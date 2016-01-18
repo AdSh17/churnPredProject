@@ -1,2 +1,0 @@
-# churnPredProject
-Churn Prediction Project
